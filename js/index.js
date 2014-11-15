@@ -5,11 +5,13 @@ var map = L.mapbox.map('map', 'dnomadb.i306ioka', {
 }).fitBounds(bbox);
 
 var regStyle = {
-    color: 'steelblue'
+    color: 'orange',
+    opacity: 0.5
 }
 
 var hoverStyle = {
-    color: 'orange'
+    color: 'orange',
+    opacity: 0.9
 }
 
 var iconURL = 'img/mapbox-maki-b95bce2/renders/';   
@@ -21,7 +23,7 @@ $.ajax({
     L.geoJson($.parseJSON(data), {
         style: regStyle,
         onEachFeature: function(feat, layer) {
-            layer.bindPopup('<a href="' + feat.properties.link + '" >' + feat.properties['fauna name'] + '</a>');
+            // layer.bindPopup('<a href="' + feat.properties.link + '" >' + feat.properties['fauna name'] + '</a>');
             var pBounds = L.polygon(feat.geometry.coordinates[0])
                 .getBounds()
                 .getCenter();
