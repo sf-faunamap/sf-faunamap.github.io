@@ -9,11 +9,11 @@ var regStyle = {
     color: "#F24427",
     fillOpacity: 0.7,
     weight: 0
-}
+};
 
 var hoverStyle = {
     fillOpacity: 0.5
-}
+};
 
 var iconURL = 'img/mapbox-maki-b95bce2/renders/';
 var hash = L.hash(map);
@@ -21,6 +21,7 @@ $.ajax({
     type: "GET",
     url: "js/data2.geojson"
 }).done(function(data) {
+    console.log(data);
     L.geoJson($.parseJSON(data), {
         style: regStyle,
         onEachFeature: function(feat, layer) {
@@ -37,7 +38,7 @@ $.ajax({
             layer.bindLabel(feat.properties.Wildlife).addTo(map);
 
             //L.marker([pBounds.lng, pBounds.lat]).addTo(map)
-              //  .bindPopup('<a href="' + feat.properties.Link + '" target="_blank">' + feat.properties['fauna'] + '</a>');
+            //  .bindPopup('<a href="' + feat.properties.Link + '" target="_blank">' + feat.properties['fauna'] + '</a>');
             layer.on('mouseover', function(e) {
                 e.target.setStyle(hoverStyle);
               //  e.target.bindLabel(feat.properties.Wildlife).addTo(map);
