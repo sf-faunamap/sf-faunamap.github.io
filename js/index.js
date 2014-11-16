@@ -17,7 +17,7 @@ var hoverStyle = {
 
 var iconURL = 'img/mapbox-maki-b95bce2/renders/';
 var hash = L.hash(map);
-console.log("You're the man now, dog")
+console.log("You're the man now, dog");
 $.ajax({
     type: "GET",
     url: "https://gist.githubusercontent.com/dnomadb/40e14a3b78ec118bb711/raw/9b477351ff312a1897cbe631baa093ae7afc92fe/data.geojson"
