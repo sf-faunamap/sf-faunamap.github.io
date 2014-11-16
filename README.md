@@ -1,2 +1,4 @@
-sf-faunamap.github.io
-=====================
+ecohack-naturesf
+================
+
+A tool for finding charismatic megafauna in San Francisco, CA
