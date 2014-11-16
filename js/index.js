@@ -9,17 +9,18 @@ var regStyle = {
     color: "#F24427",
     fillOpacity: 0.7,
     weight: 0
-}
+};
 
 var hoverStyle = {
     fillOpacity: 0.5
-}
+};
 
 var iconURL = 'img/mapbox-maki-b95bce2/renders/';
 var hash = L.hash(map);
+console.log("You're the man now, dog");
 $.ajax({
     type: "GET",
-    url: "js/data2.geojson"
+    url: "https://gist.githubusercontent.com/dnomadb/40e14a3b78ec118bb711/raw/9b477351ff312a1897cbe631baa093ae7afc92fe/data.geojson"
 }).done(function(data) {
     L.geoJson($.parseJSON(data), {
         style: regStyle,
@@ -37,7 +38,7 @@ $.ajax({
             layer.bindLabel(feat.properties.Wildlife).addTo(map);
 
             //L.marker([pBounds.lng, pBounds.lat]).addTo(map)
-              //  .bindPopup('<a href="' + feat.properties.Link + '" target="_blank">' + feat.properties['fauna'] + '</a>');
+            //  .bindPopup('<a href="' + feat.properties.Link + '" target="_blank">' + feat.properties['fauna'] + '</a>');
             layer.on('mouseover', function(e) {
                 e.target.setStyle(hoverStyle);
               //  e.target.bindLabel(feat.properties.Wildlife).addTo(map);
