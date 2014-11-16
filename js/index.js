@@ -23,7 +23,6 @@ $.ajax({
     url: "https://gist.githubusercontent.com/dnomadb/40e14a3b78ec118bb711/raw/9b477351ff312a1897cbe631baa093ae7afc92fe/data.geojson"
 }).done(function(data) {
     L.geoJson($.parseJSON(data), {
-        console.log(data);
         style: regStyle,
         onEachFeature: function(feat, layer) {
             layer.bindPopup(
