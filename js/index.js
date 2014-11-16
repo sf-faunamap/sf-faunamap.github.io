@@ -19,7 +19,6 @@ var hoverStyle = {
 var myFirebaseRef = new Firebase("https://vivid-fire-9229.firebaseio.com/");
 var iconURL = 'img/mapbox-maki-b95bce2/renders/';   
 var hash = L.hash(map);
-// myFirebaseRef.set();
 
 var featureGroup = L.featureGroup().addTo(map);
 
@@ -39,7 +38,7 @@ var drawControl = new L.Control.Draw({
 myFirebaseRef.on("value", function(val) {
     $.each(val.val(), function(a, b) {
         var tPoly = L.polygon(b.latLngs)
-            .bindPopup(b.name);
+            .bindPopup(b.name + '<br />' + b.url);
         featureGroup.addLayer(tPoly);
     });
 }, function (errorObject) {
