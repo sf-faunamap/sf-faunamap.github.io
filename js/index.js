@@ -6,7 +6,7 @@ var map = L.mapbox.map('map', 'caperrault.k82d7bm8', {
 
 var regStyle = {
   //  stroke: false,
-    color: "#F24427",
+    color: "#FFFFFF",
     fillOpacity: 0.2,
     weight: 0
 };
