@@ -21,7 +21,7 @@ var hash = L.hash(map);
 console.log("You're the man now, dog");
 $.ajax({
     type: "GET",
-    url: "js/data2.geojson"
+    url: "https://gist.githubusercontent.com/dnomadb/40e14a3b78ec118bb711/raw/9b477351ff312a1897cbe631baa093ae7afc92fe/data.geojson"
 }).done(function(data) {
     L.geoJson($.parseJSON(data), {
         style: regStyle,
