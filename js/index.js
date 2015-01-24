@@ -5,11 +5,11 @@ var map = L.mapbox.map('map', 'caperrault.k82d7bm8', {
 }).fitBounds(bbox);
 
 var regStyle = {
-    color: "#000",
+    color: "#F24427",
 	 // stroke-width: 2,
     fillColor: "#F24427",
     fillOpacity: 0.7,
-    weight: 3
+    weight: 2
 };
 
 var hoverStyle = {
