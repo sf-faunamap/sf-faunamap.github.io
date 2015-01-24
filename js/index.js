@@ -6,10 +6,9 @@ var map = L.mapbox.map('map', 'caperrault.k82d7bm8', {
 
 var regStyle = {
     color: "#9E2C19",
-	 // stroke-width: 2,
     fillColor: "#F24427",
     fillOpacity: 0.7,
-    weight: 2
+    weight: 3
 };
 
 var hoverStyle = {
