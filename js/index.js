@@ -21,7 +21,7 @@ var hash = L.hash(map);
 console.log("You're the man now, dog");
 $.ajax({
     type: "GET",
-    url: "https://gist.githubusercontent.com/caperrault/177f2d4b7b7c774c569b/raw/46ec95c7f2f7e369ad07d441e5f22519315a7dc3/NaturalSF.geojson"
+    url: "https://gist.githubusercontent.com/caperrault/177f2d4b7b7c774c569b/raw/71097b0fd948bbb8dc9310c2b2217f9f1d4168c6/NaturalSF.geojson"
 }).done(function(data) {
     L.geoJson($.parseJSON(data), {
         style: regStyle,
