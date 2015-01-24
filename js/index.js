@@ -8,7 +8,7 @@ var regStyle = {
     color: "#9E2C19",
     opacity: 1,
     fillColor: "#FF4400",
-    fillOpacity: 0.7,
+    fillOpacity: 0.5,
     weight: 2
 };
 
