@@ -21,7 +21,7 @@ var hash = L.hash(map);
 console.log("You're the man now, dog");
 $.ajax({
     type: "GET",
-    url: "js/data.geojson"
+    url: "js/data2.geojson"
 }).done(function(data) {
     L.geoJson($.parseJSON(data), {
         style: regStyle,
