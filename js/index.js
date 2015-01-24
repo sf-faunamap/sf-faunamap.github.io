@@ -9,7 +9,7 @@ var regStyle = {
     opacity: 1,
     fillColor: "#F24427",
     fillOpacity: 0.7,
-    weight: 3
+    weight: 2
 };
 
 var hoverStyle = {
