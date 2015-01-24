@@ -21,7 +21,7 @@ var hash = L.hash(map);
 console.log("You're the man now, dog");
 $.ajax({
     type: "GET",
-    url: "https://github.com/sf-faunamap/sf-faunamap.github.io/blob/master/js/data2.geojson"
+    url: "js/data.geojson"
 }).done(function(data) {
     L.geoJson($.parseJSON(data), {
         style: regStyle,
