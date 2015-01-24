@@ -8,7 +8,7 @@ var regStyle = {
   //  stroke: false,
   //  color: "#F24427",
     color: "#FFFFFF",
-    fillOpacity: 0.2,
+    fillOpacity: 0.9,
     weight: 0
 };
 
