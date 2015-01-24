@@ -5,7 +5,7 @@ var map = L.mapbox.map('map', 'caperrault.k82d7bm8', {
 }).fitBounds(bbox);
 
 var regStyle = {
-    color: "#F24427",
+    color: "#9E2C19",
 	 // stroke-width: 2,
     fillColor: "#F24427",
     fillOpacity: 0.7,
