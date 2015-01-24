@@ -13,7 +13,7 @@ var regStyle = {
 };
 
 var hoverStyle = {
-    fillOpacity: 0.5
+    fillOpacity: 0.3
 };
 
 var iconURL = 'img/mapbox-maki-b95bce2/renders/';
