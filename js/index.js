@@ -7,7 +7,7 @@ var map = L.mapbox.map('map', 'caperrault.k82d7bm8', {
 var regStyle = {
   //  stroke: false,
   //  color: "#F24427",
-    color: "#FFFFFF",
+    color: "#F24427",
     fillOpacity: 0.9,
     weight: 0
 };
@@ -21,7 +21,7 @@ var hash = L.hash(map);
 console.log("You're the man now, dog");
 $.ajax({
     type: "GET",
-    url: "https://gist.githubusercontent.com/dnomadb/40e14a3b78ec118bb711/raw/9b477351ff312a1897cbe631baa093ae7afc92fe/data.geojson"
+    url: "https://github.com/sf-faunamap/sf-faunamap.github.io/blob/master/js/data2.geojson"
 }).done(function(data) {
     L.geoJson($.parseJSON(data), {
         style: regStyle,
